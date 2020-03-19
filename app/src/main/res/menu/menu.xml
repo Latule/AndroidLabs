@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/openUrl"
+        android:title="Open url activity"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/dialog"
+        android:title="Dialog"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/Exit"
+        android:title="Exit"
+        app:showAsAction="never" />
+</menu>
