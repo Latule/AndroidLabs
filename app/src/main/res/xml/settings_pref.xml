@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="store_data"
+        android:title="@string/store_data"/>
+
+
+<ListPreference
+    android:key="font_size"
+    android:title="@string/font_size"
+    android:summary="Set font size"
+    android:entries="@array/font"
+    android:entryValues="@array/fontData"
+/>
+
+
+</PreferenceScreen>

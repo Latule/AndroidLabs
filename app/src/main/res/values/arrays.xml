@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="font">
+        <item>Size 8</item>
+        <item>Size 10</item>
+        <item>Size 12</item>
+        <item>Size 14</item>
+        </string-array>
+    <string-array name="fontData">
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+        <item>14</item></string-array>
+</resources>

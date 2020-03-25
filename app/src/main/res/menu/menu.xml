@@ -10,6 +10,15 @@
         android:title="Dialog"
         app:showAsAction="never" />
 
+    <item android:id="@+id/export"
+        android:title="@string/export"
+        app:showAsAction="never" />
+
+
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
     <item android:id="@+id/Exit"
         android:title="Exit"
         app:showAsAction="never" />

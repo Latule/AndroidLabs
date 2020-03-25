@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Android</string>
+    <string name="action_settings">Settings</string>
+    <string name="display_text">Store Data</string>
+    <string name="store_data">Store data</string>
+    <string name="font_size">Font size</string>
+    <string name="export">Export</string>
 </resources>
