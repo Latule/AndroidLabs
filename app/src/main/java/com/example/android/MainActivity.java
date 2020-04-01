@@ -135,6 +135,11 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
+            case R.id.openSensors:
+                Log.i(TAG, "Menu -> Open sensors Activity");
+                openActivitySensors();
+                return true;
+
             case R.id.openUrl:
                 Log.i(TAG, "Menu -> Open Url Activity");
                 openActivityUrl();
@@ -213,6 +218,11 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
 
     public void openActivityUrl(){
         Intent intent=new Intent(this, url.class);
+        startActivity(intent);
+    }
+
+    public void openActivitySensors(){
+        Intent intent=new Intent(this, sensors.class);
         startActivity(intent);
     }
 
