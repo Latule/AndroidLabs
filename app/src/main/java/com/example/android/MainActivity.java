@@ -25,10 +25,8 @@ import androidx.preference.PreferenceManager;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements SharedPreferences.OnSharedPreferenceChangeListener {
     private static final String TAG = "MAIN ACTIVITY";
@@ -134,10 +132,17 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        Intent intent;
         switch (item.getItemId()){
             case R.id.openSensors:
                 Log.i(TAG, "Menu -> Open sensors Activity");
                 openActivitySensors();
+                return true;
+
+            case R.id.openCamera:
+                Log.i(TAG, "Menu -> Open camera Activity");
+                intent = new Intent(MainActivity.this, CameraActivity.class);
+                startActivity(intent);
                 return true;
 
             case R.id.openUrl:
@@ -157,7 +162,7 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
 
             case R.id.action_settings:
                 Log.i(TAG, "Menu -> Settings");
-                Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+                intent = new Intent(MainActivity.this, SettingsActivity.class);
                 startActivity(intent);
                 return true;
 
